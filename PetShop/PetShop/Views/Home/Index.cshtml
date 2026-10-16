@@ -1,8 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Início";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero" aria-labelledby="hero-title"><div><p class="text-uppercase fw-bold mb-2" style="letter-spacing:.12em;color:#99f6e4;">Gestão simples e acolhedora</p><h1 id="hero-title">Tudo para cuidar melhor dos seus pets.</h1><p>Organize clientes, profissionais e reservas em um só lugar, com uma experiência clara para sua equipe.</p><a class="btn btn-light mt-2" asp-controller="ReservaServico" asp-action="Create">Criar uma reserva</a></div></section>
+<section class="feature-grid" aria-label="Recursos do sistema"><article class="feature-card"><span class="feature-icon" aria-hidden="true">🐶</span><h3>Clientes organizados</h3><p>Cadastre e consulte os dados dos tutores com rapidez.</p></article><article class="feature-card"><span class="feature-icon" aria-hidden="true">🩺</span><h3>Equipe conectada</h3><p>Mantenha os veterinários e suas especialidades sempre acessíveis.</p></article><article class="feature-card"><span class="feature-icon" aria-hidden="true">📅</span><h3>Reservas sob controle</h3><p>Acompanhe horários, valores e status dos serviços.</p></article></section>
