@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using PetShop.Models;
-using PetShop.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,11 +11,11 @@ builder.Services.AddDbContext<DbPetShopContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoSqlServer")));
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
+   .AddCookie(options =>
     {
-        options.LoginPath = "/Account/Login";
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
-    });
+     options.LoginPath = "/Account/Login";
+       options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+   });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

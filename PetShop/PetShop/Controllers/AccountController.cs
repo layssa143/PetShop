@@ -1,4 +1,4 @@
-﻿using appPetShop.Models;
+﻿
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using PetShop.Models;
 using System.Security.Claims;
 
-namespace appPetShop.Controllers
+namespace PetShop.Controllers
 {
     public class AccountController : Controller
     {

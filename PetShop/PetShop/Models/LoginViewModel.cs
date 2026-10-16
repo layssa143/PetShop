@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace appPetShop.Models
+namespace PetShop.Models
 {
     public class LoginViewModel
     {
